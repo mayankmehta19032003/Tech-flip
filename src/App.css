@@ -2,8 +2,8 @@
   max-width: 450px;
   margin: 30px auto;
 }
-/* Apply subtle pink glow to h1 */
-h1 {
+
+.App h1 {
   font-weight: bold;
   color: #fff;
   text-align: center;
