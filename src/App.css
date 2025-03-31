@@ -1,6 +1,14 @@
 .App {
-  max-width: 860px;
-  margin: 40px auto;
+  max-width: 450px;
+  margin: 30px auto;
+}
+/* Apply subtle pink glow to h1 */
+h1 {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
 }
 
 button {
@@ -24,4 +32,11 @@ button:hover{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+@media (max-width: 400px) {
+  .App {
+    max-width: 300px;
+    
+  }
 }

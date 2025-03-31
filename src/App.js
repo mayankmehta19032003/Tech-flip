@@ -3,12 +3,14 @@ import "./App.css";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  { src: "/img/helmet-1.png", matched: false },
-  { src: "/img/potion-1.png", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
+  { src: "/img/html.jpeg", matched: false },
+  { src: "/img/css.jpeg", matched: false },
+  { src: "/img/javascript.jpeg", matched: false },
+  { src: "/img/git.jpeg", matched: false },
+  { src: "/img/python.jpeg", matched: false },
+  { src: "/img/node.jpeg", matched: false },
+  { src: "/img/mongoDB.jpeg", matched: false },
+  { src: "/img/postgreSQL.jpeg", matched: false },
 ];
 
 function App() {
@@ -74,8 +76,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Magic Memory</h1>
-      <button onClick={shuffleCards}>New Game</button>
+      <h1> TECH FLIP </h1>
+      <button onClick={shuffleCards}>New Game 🔁</button>
 
       <div className="card-grid">
         {cards.map((card) => (
