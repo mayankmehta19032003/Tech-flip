@@ -8,3 +8,15 @@
     border: 2px solid #fff;
     border-radius: 6px;
 }
+
+/* front of card - the picture*/
+.card .front{
+    position: absolute; /* because of this position it is sitting over back cover img*/
+    transform: rotateY(90deg);  /* hide the image with is property - means it is sitting still on the back cover image but due to rotation we cannot see it (because it is flat) */ 
+}
+
+.flipped .front{
+    transform: rotateY(0deg); /* again visible on the top of back cover img*/
+}
+
+/* back of the card - cover */
