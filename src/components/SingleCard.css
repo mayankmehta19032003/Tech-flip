@@ -13,10 +13,20 @@
 .card .front{
     position: absolute; /* because of this position it is sitting over back cover img*/
     transform: rotateY(90deg);  /* hide the image with is property - means it is sitting still on the back cover image but due to rotation we cannot see it (because it is flat) */ 
+    transition: all ease-in 0.2s;
 }
 
 .flipped .front{
     transform: rotateY(0deg); /* again visible on the top of back cover img*/
+    transition-delay: 0.2s;
 }
 
 /* back of the card - cover */
+.card .back{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+.flipped .back{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
