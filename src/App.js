@@ -26,6 +26,9 @@ function App() {
       .sort(() => Math.random() - 0.5) //The .sort() method works by comparing two elements at a time //Negative → Swap positions Positive → Keep the order Zero → No change
       .map((card) => ({ ...card, id: Math.random() })); // it will id to every object and copy its all property.
 
+    
+    setChoiceOne(null);
+    setChoiceTwo(null);
     setCards(shuffleCards);
     setTurns(0);
   };
@@ -64,6 +67,11 @@ function App() {
     }
   }, [choiceOne, choiceTwo]);
 
+  //start a new game automatically
+  useEffect(()=>{
+    shuffleCards();
+  },[])
+
   return (
     <div className="App">
       <h1>Magic Memory</h1>
@@ -80,6 +88,7 @@ function App() {
           />
         ))}
       </div>
+      <p>Turns: {turns}</p>
     </div>
   );
 }
